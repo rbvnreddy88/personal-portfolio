@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rondla Narasimha Reddy — Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fbfdff;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent1:#5266ff;
+      --accent2:#b43cff;
+      --accent-grad: linear-gradient(90deg,var(--accent1),var(--accent2));
+      --radius:18px;
+      --shadow: 0 18px 40px rgba(15,23,42,0.08);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b1220}
+    .container{max-width:1200px;margin:40px auto;padding:40px}
+
+    /* Header / Hero */
+    .hero{display:grid;grid-template-columns:1fr 480px;gap:40px;align-items:center}
+    .name{font-size:84px;line-height:0.9;font-weight:800;margin:0}
+    .name .first{color:#0f1724}
+    .name .second{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .title{display:flex;align-items:center;gap:12px;color:var(--muted);margin-top:14px}
+    .lead{color:#374151;margin-top:24px;line-height:1.8;font-size:18px}
+    .meta-row{display:flex;gap:18px;align-items:center;margin-top:20px;color:var(--muted)}
+    .btn-row{display:flex;gap:14px;margin-top:26px}
+    .btn{padding:12px 20px;border-radius:12px;border:none;cursor:pointer;font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,#4f6bff,#b43cff);color:white;box-shadow:0 8px 30px rgba(79,107,255,0.2)}
+    .btn.ghost{background:transparent;border:2px solid rgba(79,107,255,0.12);color:var(--accent1)}
+
+    .profile-card{background:var(--card);border-radius:22px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;position:relative}
+    .profile-frame{width:360px;height:360px;border-radius:18px;background:linear-gradient(135deg,rgba(81,102,255,0.06),rgba(180,60,255,0.06));display:flex;align-items:center;justify-content:center;padding:22px}
+    .profile-frame img{width:100%;height:100%;object-fit:cover;border-radius:12px;border:16px solid #fff}
+    .open-pill{position:absolute;right:22px;bottom:20px;background:linear-gradient(90deg,#12c48c,#1e9cff);padding:10px 18px;border-radius:999px;color:white;font-weight:700;box-shadow:0 8px 24px rgba(30,156,255,0.14)}
+
+    /* sections */
+    section{margin-top:56px}
+    h2.section-title{text-align:center;font-size:36px;margin:10px 0 8px}
+    .underline{width:120px;height:6px;margin:8px auto;border-radius:6px;background:var(--accent-grad)}
+
+    .about-grid{display:grid;grid-template-columns:1fr 460px;gap:32px;align-items:start}
+    .card{background:var(--card);padding:20px;border-radius:16px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 8px}
+    .stat-grid{display:flex;gap:18px;margin-top:24px}
+    .stat{background:var(--card);padding:24px;border-radius:14px;box-shadow:0 18px 40px rgba(15,23,42,0.04);text-align:center;flex:1}
+    .stat .num{font-weight:800;font-size:28px;color:var(--accent1)}
+
+    /* skills row */
+    .skills-row{display:flex;gap:24px;justify-content:space-between}
+    .skill-box{background:var(--card);padding:26px;border-radius:18px;box-shadow:var(--shadow);flex:1}
+    .skill-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .badge{background:#f3f4f6;padding:10px 14px;border-radius:10px;color:#111;font-weight:600}
+
+    /* contact cards */
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:28px}
+    .contact-card{background:linear-gradient(180deg,rgba(79,107,255,0.04),rgba(180,60,255,0.03));padding:34px;border-radius:16px;box-shadow:var(--shadow);text-align:center}
+    .contact-card p{margin-top:10px;color:#374151}
+
+    footer{text-align:center;color:var(--muted);margin-top:48px;padding-bottom:40px}
+
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr}
+      .about-grid{grid-template-columns:1fr}
+      .skills-row{flex-direction:column}
+      .contact-grid{grid-template-columns:1fr}
+      .name{font-size:56px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div>
+        <h1 class="name"><span class="first">Rondla</span><br><span class="second">Narasimha<br>Reddy</span></h1>
+        <div class="title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3v18h18" stroke="#6b7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div>Data Analyst & Data Science Enthusiast</div></div>
+
+        <p class="lead">Passionate about transforming complex data into actionable business insights. Currently contributing as a Data Analyst Intern at <a href="https://www.linkedin.com/company/NanoMechLabs/" target="_blank" style="color:var(--accent1);font-weight:700">Nano Mech Labs</a>, specializing in Python, SQL, and advanced analytics to drive data-driven decision making.</p>
+
+        <div class="meta-row">
+          <div>📍 India</div>
+          <div> • </div>
+          <div>🟢 Available Now</div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn primary" href="#skills">View My Skills</a>
+          <a class="btn ghost" href="#contact">Let's Connect</a>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-hidden>
+        <div class="profile-frame">
+          <!-- Updated with your uploaded profile image -->
+          <img src="WhatsApp Image 2025-07-22 at 19.25.31_913c9fb5.jpg" alt="Rondla Narasimha Reddy">
+        </div>
+        <div class="open-pill">● Open to Work</div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="underline"></div>
+
+      <div class="about-grid">
+        <div>
+          <p style="color:#374151;line-height:1.9;font-size:17px">I'm a dedicated data analyst and computer science student with an unwavering passion for transforming raw data into meaningful business insights. Currently pursuing my <strong>B.Tech in Computer Science Engineering (AI & Data Science)</strong> at <a href="https://www.linkedin.com/school/vel-tech-rangarajan-dr-sagunthala-r-&-d-institute-of-science-&-technology-chennai/" target="_blank" style="color:var(--accent1);font-weight:700">Veltech University</a>
+, where I'm in my third year of studies (2023-2027).</p>
+
+          <p style="color:#374151;line-height:1.9;font-size:17px;margin-top:18px">My professional journey began as a Data Analyst Intern at <a href="https://www.linkedin.com/company/NanoMechLabs/" target="_blank" style="color:var(--accent1);font-weight:700">Nano Mech Labs</a>, where I apply cutting-edge analytical techniques to solve complex business challenges. My technical expertise encompasses Python, SQL, and advanced data visualization tools including Tableau and Power BI.</p>
+
+          <p style="color:#374151;line-height:1.9;font-size:17px;margin-top:18px">I excel in the complete data lifecycle: from collection and cleaning to analysis and presentation, ensuring that stakeholders receive clear, actionable insights that drive strategic decision-making. Beyond my professional work, I continuously expand my skill set through personal projects and online certifications.</p>
+
+          <div class="stat-grid">
+            <div class="stat"><div class="num">6+</div><div>Months Learning</div></div>
+            <div class="stat"><div class="num" style="color:#8b3cff">5+</div><div>Technologies Learned</div></div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="card">
+            <h3>Education</h3>
+            <p style="margin:6px 0 0"><strong>B.Tech in Computer Science Engineering</strong></p>
+            <p style="margin:6px 0;color:var(--accent2)">Specialization: AI & Data Science</p>
+            <p style="margin:6px 0 0;color:var(--accent1);font-weight:700"><a href=https://www.linkedin.com/school/vel-tech-rangarajan-dr-sagunthala-r-%26-d-institute-of-science-%26-technology-chennai/" target="_blank" style="color:var(--accent1);font-weight:700">Veltech University</a></p>
+            <p style="color:var(--muted);margin-top:8px">2023 - 2027 | Currently in 3rd Year</p>
+            <p style="margin-top:12px;color:#374151;line-height:1.6">Focusing on artificial intelligence, machine learning, data structures, algorithms, and advanced data analytics methodologies.</p>
+          </div>
+
+          <div class="card">
+            <h3>Current Experience</h3>
+            <p style="margin:6px 0 0;font-weight:700">Data Analyst Intern</p>
+            <a href="https://www.linkedin.com/company/NanoMechLabs/" target="_blank" style="color:var(--accent1);font-weight:700">Nano Mech Labs</a>
+            <p style="color:var(--muted);margin-top:8px">July 2025 - Present</p>
+            <p style="margin-top:12px;color:#374151;line-height:1.6">Developing comprehensive data analysis solutions, creating interactive visualizations, and supporting strategic business intelligence initiatives.</p>
+          </div>
+
+          <div class="card">
+            <h3>Professional Goals</h3>
+            <div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+              <div style="background:#ecfdf5;padding:12px;border-radius:10px">Advanced SQL & Database Optimization</div>
+              <div style="background:#eef2ff;padding:12px;border-radius:10px">Machine Learning Model Development</div>
+              <div style="background:#fff0fb;padding:12px;border-radius:10px">Data Science Certifications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="margin-top:60px">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="underline"></div>
+      <p style="text-align:center;color:var(--muted);margin-top:12px">A comprehensive toolkit for modern data analysis and business intelligence</p>
+
+      <div class="skills-row" style="margin-top:28px">
+        <div class="skill-box">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#4f6bff,#9b6bff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">📊</div>
+            <div>
+              <h3 style="margin:0">Analytics & Visualization</h3>
+              <div class="skill-badges">
+                <div class="badge">Python</div>
+                <div class="badge">SQL</div>
+                <div class="badge">Excel</div>
+                <div class="badge">Tableau</div>
+                <div class="badge">Power BI</div>
+                <div class="badge">Matplotlib</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#b43cff,#ff6fb6);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">🧠</div>
+            <div>
+              <h3 style="margin:0">Data Science & ML</h3>
+              <div class="skill-badges">
+                <div class="badge">Pandas</div>
+                <div class="badge">NumPy</div>
+                <div class="badge">Scikit-learn</div>
+                <div class="badge">Jupyter</div>
+                <div class="badge">Seaborn</div>
+                <div class="badge">Statistics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#11d88a,#00b37a);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">📈</div>
+            <div>
+              <h3 style="margin:0">Database & Tools</h3>
+              <div class="skill-badges">
+                <div class="badge">MySQL</div>
+                <div class="badge">Git</div>
+                <div class="badge">Google Analytics</div>
+                <div class="badge">Data Cleaning</div>
+                <div class="badge">MS Office</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:60px">
+      <h2 class="section-title">Let's Create Data Magic Together</h2>
+      <div class="underline"></div>
+      <p style="text-align:center;color:var(--muted);margin-top:12px">Ready to transform your data challenges into opportunities? I'm passionate about collaborating on innovative analytics projects and always eager to learn from industry experts.</p>
+
+<div class="contact-grid">
+        <div class="contact-card" style="background:linear-gradient(180deg,rgba(255,238,255,0.4),rgba(255,238,255,0.4))">
+            <a href="mailto:rbvnreddy88@gmail.com" style="text-decoration:none; color:inherit;"></a>
+            <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,#4f6bff,#b43cff);display:inline-flex;align-items:center;justify-content:center;color:white;font-weight:700">✉️</div>
+            <h3 style="margin-top:16px">Email</h3>
+            <p><a href="mailto:rbvnreddy88@gmail.com" style="color:inherit; text-decoration:none;">rbvnreddy88@gmail.com</a></p>
+        </div>
+
+<div class="contact-card" style="background:linear-gradient(180deg,rgba(255,238,255,0.5),rgba(255,238,255,0.5))">
+  <a href="https://github.com/rbvnreddy88" target="_blank" style="text-decoration:none; color:inherit;">
+    <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,#ff6fb6,#b43cff);display:inline-flex;align-items:center;justify-content:center;color:white;font-weight:700">🐱</div>
+    <h3 style="margin-top:16px">GitHub</h3>
+    <p>github.com/rbvnreddy88</p>
+  </a>
+</div>
+
+<div class="contact-card" style="background:linear-gradient(180deg,rgba(235,255,245,0.6),rgba(235,255,245,0.6))">
+  <a href="https://www.linkedin.com/in/rondla-narasimha-reddy-639177312" target="_blank" style="text-decoration:none; color:inherit;">
+    <div style="width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,#00d08a,#00b37a);display:inline-flex;align-items:center;justify-content:center;color:white;font-weight:700">in</div>
+    <h3 style="margin-top:16px">LinkedIn</h3>
+    <p>rondla-narasimha-reddy</p>
+  </a>
+</div>
+
+</div>
+
+      <div style="text-align:center;margin-top:26px">
+        <a href="mailto:rbvnreddy88@gmail.com" class="btn primary">Start a Conversation</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rondla Narasimha Reddy
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
